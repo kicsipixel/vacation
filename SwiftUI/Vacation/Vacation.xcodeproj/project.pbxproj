@@ -13,6 +13,10 @@
 		57B08BE0263B5C3D00E6D650 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B08BDF263B5C3D00E6D650 /* MainTabBarView.swift */; };
 		57B08BE2263B5D4300E6D650 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B08BE1263B5D4300E6D650 /* PeopleView.swift */; };
 		57B08BE6263C2C6C00E6D650 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B08BE5263C2C6C00E6D650 /* People.swift */; };
+		57B08BEB263C2EE200E6D650 /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B08BEA263C2EE200E6D650 /* PersonViewModel.swift */; };
+		57B08BED263C2EF300E6D650 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B08BEC263C2EF300E6D650 /* PeopleViewModel.swift */; };
+		57B08BF2263C305800E6D650 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B08BF1263C305800E6D650 /* APIService.swift */; };
+		57B08BF5263C3E8D00E6D650 /* PeopleListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B08BF4263C3E8D00E6D650 /* PeopleListRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		57B08BDF263B5C3D00E6D650 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		57B08BE1263B5D4300E6D650 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		57B08BE5263C2C6C00E6D650 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		57B08BEA263C2EE200E6D650 /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		57B08BEC263C2EF300E6D650 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
+		57B08BF1263C305800E6D650 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		57B08BF4263C3E8D00E6D650 /* PeopleListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 		57B08BCF263B5B9C00E6D650 /* Vacation */ = {
 			isa = PBXGroup;
 			children = (
+				57B08BF0263C304700E6D650 /* Network */,
+				57B08BE9263C2ECF00E6D650 /* ViewModel */,
 				57B08BE4263C2C5600E6D650 /* Models */,
 				57B08BE3263B5D5000E6D650 /* Views */,
 				57B08BD0263B5B9C00E6D650 /* VacationApp.swift */,
@@ -77,8 +87,8 @@
 		57B08BE3263B5D5000E6D650 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				57B08BF3263C3D5D00E6D650 /* People Tab */,
 				57B08BDF263B5C3D00E6D650 /* MainTabBarView.swift */,
-				57B08BE1263B5D4300E6D650 /* PeopleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -89,6 +99,32 @@
 				57B08BE5263C2C6C00E6D650 /* People.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		57B08BE9263C2ECF00E6D650 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				57B08BEA263C2EE200E6D650 /* PersonViewModel.swift */,
+				57B08BEC263C2EF300E6D650 /* PeopleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		57B08BF0263C304700E6D650 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				57B08BF1263C305800E6D650 /* APIService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		57B08BF3263C3D5D00E6D650 /* People Tab */ = {
+			isa = PBXGroup;
+			children = (
+				57B08BE1263B5D4300E6D650 /* PeopleView.swift */,
+				57B08BF4263C3E8D00E6D650 /* PeopleListRowView.swift */,
+			);
+			path = "People Tab";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,8 +197,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				57B08BE6263C2C6C00E6D650 /* People.swift in Sources */,
+				57B08BF2263C305800E6D650 /* APIService.swift in Sources */,
+				57B08BED263C2EF300E6D650 /* PeopleViewModel.swift in Sources */,
+				57B08BEB263C2EE200E6D650 /* PersonViewModel.swift in Sources */,
 				57B08BE0263B5C3D00E6D650 /* MainTabBarView.swift in Sources */,
 				57B08BD1263B5B9C00E6D650 /* VacationApp.swift in Sources */,
+				57B08BF5263C3E8D00E6D650 /* PeopleListRowView.swift in Sources */,
 				57B08BE2263B5D4300E6D650 /* PeopleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
