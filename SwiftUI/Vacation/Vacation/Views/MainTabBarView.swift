@@ -15,6 +15,11 @@ struct MainTabBarView: View {
                     Image(systemName: "person.fill")
                     Text("People")
                 }
+            TestView()
+                .tabItem {
+                    Image(systemName: "hammer.fill")
+                    Text("Test")
+                }
         }
     }
 }

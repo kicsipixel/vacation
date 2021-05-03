@@ -12,14 +12,14 @@ struct PersonViewModel {
     let person: People.Item
     
     var id: Int {
-        return person.id
+        return person.id!
     }
     
     var name: String {
-        return person.name
+        return person.pname ?? ""
     }
     
     var remaining: Int {
-        return person.remaining
+        return person.remaining ?? -1
     }
 }
